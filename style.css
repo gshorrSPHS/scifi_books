@@ -1,0 +1,69 @@
+h1 {
+	color : green;
+}
+p {
+	color : blue;
+}
+body {
+	margin : 0;
+}
+
+
+/* # lets you refer to an id */
+#navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    overflow:hidden;
+	/*border: 1px solid blue;*/
+	/*to make it stay on top*/
+	position:fixed;
+	top:0;
+	width:100%;
+}
+/*  . lets you refer to a class */
+.navitem {
+	text-align:center;
+	/*border-bottom: 1px solid blue;*/
+	float:left;
+}
+
+.navitem:last-child {
+	border-bottom: none;
+}
+
+.navitem a {
+    display: block;
+    color: orange;
+    text-decoration: none;
+    padding: 8px 16px;
+}
+.navitem a.active {
+	background-color:lightgray;
+	color:black;
+}
+
+.navitem a:hover:not(.active) {
+	/* change background color 
+	     to something contrasting
+	   and the text color so it can
+	     be read on that contrasting color */
+	background-color:orange;
+	color:black;
+}
+
+/*this is for the div containing our 
+    whole body except for the navbar */
+#main {
+	margin-top:30px;
+	padding:20px;
+}
+
+
+
+
+
+
+
+
